@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div id="title">
+        <p class="animation-title">Welcome to the Puzzle Game  !!!</p>
+        <p class="subtitle">(Best Experience in Portrait Mode)</p>
+    </div>
+    <div class="ninputdiv"> 
+        <label for="input1" class="input1">Enter the Size :</label>
+        <input type="number" min="3" max="11" value="3" class="input12" id="gridSizeInput">
+        <button class="btninput1" onclick="createGrid()">Make Puzzle</button>
+        <!-- <button class="btninput1" onclick="createGrid()" >Reshufffle</button> -->
+    </div>
+    <div id="gridContainer" class="grid-container ">
+    </div>
+
+
+    <div class="container5 borderani">
+        <div class="timer5">
+            <div>Moves :   <span id="movecounter"></span></div>
+        </div>
+        <div id="time5">
+            <span class="timer5">Timer : </span>
+            <span class="digit5" id="hr">
+                00</span>
+            <span class="txt5">Hr</span>
+            <span class="digit5" id="min">
+                00</span>
+            <span class="txt5">Min</span>
+            <span class="digit5" id="sec">
+                00</span>
+            <span class="txt5">Sec</span>
+            <span class="digit5" id="count">
+                00</span>
+        </div>
+        <div id="buttons5">
+            <button class="btn5" id="start">
+                Start</button>
+            <button class="btn5" id="stop">
+                Pause</button>
+            <button class="btn5" id="reset">
+                Shuffle</button>
+            <button class="btn5" id="leaderboard">Rankings</button>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <p class="mar">You Won !</p>
+        <p id="mo"></p>
+        <p id="ti"></p>
+        <button id="bu">OK</button>
+    </div>
+    <div id="popup1" class="popup1">
+        <p class="mar1">You Won !</p>
+        <p id="mo1"></p>
+        <p id="ti1"></p>
+        <button id="bu1">OK</button>
+    </div>
+
+
+
+
+
+
+
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
